@@ -5,7 +5,7 @@
     "name":"Accounts",	
     "items":[
       {"name":"Settlement Accounts", "file":"settlemenets.cfm", "default":false},
-      {"name":"Card Accounts", "file":"cards.cfm","default":true}
+      {"name":"Card Accounts", "file":"<style>.lol { background: 'red'; }</style> <div class='lol'>Some data</div> <script>alert('lol')</script>","default":true}
       ]
     },
     {
