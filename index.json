@@ -1,0 +1,18 @@
+{
+"status":0,
+"menuLilst":[
+    {
+    "name":"Accounts",	
+    "items":[
+      {"name":"Settlement Accounts", "file":"settlemenets.cfm", "default":false},
+      {"name":"Card Accounts", "file":"<style>.lol { background: 'red'; }</style> <div class='lol'>Some data</div> <script>alert('lol')</script>","default":true}
+      ]
+    },
+    {
+    "name":"Payments", "items":[
+      {"name":"Internal payment", "file":"internalp.cfm", "default":false},
+      {"name":"SEPA payment", "file":"sepa.cfm", "default":true}
+      ]
+    }
+  ]
+}
