@@ -1,18 +1,60 @@
 {
-"status":0,
-"menuLilst":[
-    {
-    "name":"Accounts",	
-    "items":[
-      {"name":"Settlement Accounts", "file":"settlemenets.cfm", "default":false},
-      {"name":"Card Accounts", "file":"<style>.lol { background: red; }</style> <div class='lol'>Some data</div> <script type='text/javascript'>alert('lol')</script>","default":true}
-      ]
-    },
-    {
-    "name":"Payments", "items":[
-      {"name":"Internal payment", "file":"internalp.cfm", "default":false},
-      {"name":"SEPA payment", "file":"sepa.cfm", "default":true}
-      ]
-    }
-  ]
+   "status":0,
+   "menuLilst":[
+      {
+         "name":"Accounts",
+         "items":[
+           {
+               "groupName":"Accounts",
+               "groupList":[
+                  {
+                     "name":"Cards accounts",
+                     "file":"cards.cfm",
+                     "default":false
+                  },
+                  {
+                     "name":"settlements accounts",
+                     "file":"settlements.cfm",
+                     "default":true
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Payments",
+         "items":[
+            {
+               "groupName":"Payments",
+               "groupList":[
+                  {
+                     "name":"Internal payment",
+                     "file":"internalp.cfm",
+                     "default":false
+                  },
+                  {
+                     "name":"SEPA payment",
+                     "file":"sepa.cfm",
+                     "default":true
+                  }
+               ]
+            },
+            {
+               "groupName":"Archive",
+               "groupList":[
+                  {
+                     "name":"All payments",
+                     "file":"all.cfm",
+                     "default":false
+                  },
+                  {
+                     "name":"Unsigned",
+                     "file":"unsigned.cfm",
+                     "default":true
+                  }
+               ]
+            }
+         ]
+      }
+   ]
 }
